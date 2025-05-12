@@ -30,23 +30,29 @@
   </section>
 
   <section id="recipes">
-    <h2>Featured Recipes</h2>
-    <article>
-      <h3>Spicy Garlic Shrimp Tacos</h3>
-     <img src="images/shrimp-tacos.jpg" alt"shrimp Tacos" width="300">
-      <p>Juicy shrimp in garlic-lime butter, crunchy slaw, spicy aioli. Quick & flavorful.</p>
-    </article>
-    <article>
-      <h3>Fluffy Cinnamon Pancakes</h3>
-     <img src="images/pancakes.jpg" alt="cinnamon pancakes" width="300">
-          <p>Brown sugar, vanilla, cinnamon—perfect for weekend brunches.</p>
-    </article>
-    <article>
-      <h3>Creamy Vegan Alfredo</h3>
-     <img src="images/creamy-alfredo.jpg" alt="creamy alfredo" width="300">
-          <p>Cashew cream + garlic = plant-based comfort pasta at its best.</p>
-    </article>
-  </section>
+  <h2>Featured Recipes</h2>
+
+  <article>
+    <h3>Spicy Garlic Shrimp Tacos</h3>
+    <img src="images/shrimp-tacos.jpg" alt="Shrimp Tacos" width="300">
+    <p>Juicy shrimp in garlic-lime butter, crunchy slaw, spicy aioli.</p>
+    <button onclick="likeRecipe('Shrimp Tacos')">Like this recipe</button>
+  </article>
+
+  <article>
+    <h3>Fluffy Cinnamon Pancakes</h3>
+    <img src="images/pancakes.jpg" alt="Cinnamon Pancakes" width="300">
+    <p>Brown sugar, vanilla, cinnamon—perfect for weekend brunches.</p>
+    <button onclick="likeRecipe('Cinnamon Pancakes')">Like this recipe</button>
+  </article>
+
+  <article>
+    <h3>Creamy Vegan Alfredo</h3>
+    <img src="images/creamy-alfredo.jpg" alt="Creamy Alfredo" width="300">
+    <p>Cashew cream + garlic = plant-based comfort pasta at its best.</p>
+    <button onclick="likeRecipe('Creamy Alfredo')">Like this recipe</button>
+  </article>
+</section>
 
   <section id="gallery">
     <h2>Food Gallery</h2>
@@ -68,6 +74,10 @@
   <footer>
     <p>© 2025 Chef Danny | Designed with flavor</p>
   </footer>
-
+<script>
+  function likeRecipe(name) {
+    alert("Thanks for liking the " + name + " recipe!");
+  }
+</script>
 </body>
 </html>
