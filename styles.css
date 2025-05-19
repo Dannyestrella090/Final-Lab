@@ -7,7 +7,7 @@
 
 /* Body Styling */
 body {
-  font-family: 'Georgia', serif;
+  font-family: Georgia, serif;
   background-color: #fdf7f1;
   color: #3e2f1c;
   line-height: 1.7;
@@ -15,73 +15,57 @@ body {
   font-size: 1.05em;
 }
 
-/* Header */
-header {
-  background-color: #f4e0c9;
-  padding: 40px 20px;
+/* Hero Top Section */
+.hero-top {
   text-align: center;
-  border-radius: 8px;
-  margin-bottom: 30px;
+  padding: 60px 20px 40px;
+  background: linear-gradient(to bottom, #fdf2e8, #f9f5ef);
 }
 
-header h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-header p {
-  font-size: 1.2em;
+.hero-avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   margin-bottom: 20px;
 }
 
-header a {
-  background-color: #a0522d;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+.hero-top h1 {
+  font-size: 2.2em;
+  color: #5c3d28;
+  margin-bottom: 10px;
 }
 
-header a:hover {
-  background-color: #7a3b1d;
+.tagline {
+  font-size: 1.1em;
+  color: #7a5a44;
 }
 
-/* Section Styling */
+/* Sections */
 section {
   margin-bottom: 60px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
   animation: fadeIn 0.8s ease-in-out;
+  text-align: center;
 }
 
-/* Section Headings */
 section h2 {
   font-size: 2em;
   color: #5c3d28;
   margin-bottom: 20px;
   border-bottom: 2px solid #d9b48f;
   padding-bottom: 5px;
-  text-align: center;
 }
 
-/* Centered Sections */
-#about, #services, #contact, #gallery {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-#recipes {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-/* Paragraphs & Lists */
 section p,
 section li {
   margin-bottom: 10px;
 }
 
-#gallery ul {
+ul {
   list-style: none;
   padding: 0;
 }
@@ -107,6 +91,10 @@ article img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+}
+
+article p {
+  text-align: center;
 }
 
 /* Buttons */
@@ -143,62 +131,5 @@ footer {
   to {
     opacity: 1;
     transform: translateY(0);
-    article p {
-      text-align: center;
-}
-/* Hero Section Redesign */
-.hero {
-  background: linear-gradient(to right, #f4e0c9, #fffaf0);
-  padding: 60px 20px;
-}
-
-.hero-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  max-width: 1000px;
-  margin: auto;
-  text-align: center;
-}
-
-@media (min-width: 768px) {
-  .hero-content {
-    flex-direction: row;
-    text-align: left;
-    justify-content: space-between;
   }
-}
-
-.hero-text h1 {
-  font-size: 2.5em;
-  color: #5c3d28;
-  margin-bottom: 20px;
-}
-
-.hero-text p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
-}
-
-.hero-button {
-  background-color: #a0522d;
-  color: white;
-  padding: 12px 25px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.hero-button:hover {
-  background-color: #7a3b1d;
-}
-
-.hero-img img {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
