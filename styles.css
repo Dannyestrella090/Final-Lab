@@ -15,34 +15,52 @@ body {
   font-size: 1.05em;
 }
 
-/* Hero Top Section */
-.hero-top {
+/* Hero Section with Background Image */
+.hero-big {
+  background: url('images/hero-bg.jpg') center/cover no-repeat;
+  color: white;
   text-align: center;
-  padding: 60px 20px 40px;
-  background: linear-gradient(to bottom, #fdf2e8, #f9f5ef);
+  padding: 100px 20px;
+  position: relative;
 }
 
-.hero-avatar {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  margin-bottom: 20px;
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 60px 20px;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: auto;
 }
 
-.hero-top h1 {
-  font-size: 2.2em;
-  color: #5c3d28;
-  margin-bottom: 10px;
+.hero-big h1 {
+  font-size: 3em;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #fff;
 }
 
-.tagline {
+.hero-big p {
+  font-size: 1.3em;
+  margin-bottom: 25px;
+  color: #f9f9f9;
+}
+
+.hero-button {
+  background-color: #fff;
+  color: #7a3b1d;
+  padding: 14px 30px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
   font-size: 1.1em;
-  color: #7a5a44;
+  transition: background-color 0.3s ease;
 }
 
-/* Sections */
+.hero-button:hover {
+  background-color: #f4e0c9;
+}
+
+/* Section Styling */
 section {
   margin-bottom: 60px;
   max-width: 900px;
